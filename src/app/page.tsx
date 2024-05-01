@@ -121,7 +121,7 @@ export default function Home() {
             <div className=" absolute -bottom-[90px]  text-banner text-[16rem] leading-[16rem]">
               <span className="text-lineWhite">VICTORY</span> <br />
               <span className="text-lineWhite">PARK</span>
-              <span className="-ml-[10rem] text-[11rem] text-orange" style={{ fontFamily: 'Dancing Script', fontWeight: '200' }}> <i>Residences</i></span>
+              <span className="-ml-[10rem] text-[11rem] text-orange font-DS"  > <i>Residences</i></span>
             </div>
             <div className="absolute right-0 -bottom-[30px]">
               <div className="flex gap-3 bg-white rounded-full py-4 px-5 items-center">
@@ -205,7 +205,7 @@ export default function Home() {
               <h2 className="leading-[0px] font-DM text-[18rem] text-center text-orange  ">
                 PLACES
               </h2>
-              <h5 className="leading-[0px] text-[12rem] text-center text-lineWhite" style={{ fontFamily: 'Dancing Script', fontWeight: '200' }}><i>Loremipsum.</i></h5>
+              <h5 className="leading-[0px] text-[12rem] text-center text-lineWhite font-DS"  ><i>Loremipsum.</i></h5>
             </div>
             <div className="border absolute -bottom-[4rem] left-[28%] intro-2-one bg-white h-[160px] w-[160px] rounded-full flex justify-center items-center text-orange ">
               <div>
