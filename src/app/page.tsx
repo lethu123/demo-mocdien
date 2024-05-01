@@ -43,13 +43,11 @@ export default function Home() {
   return (
     <>
 
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" />
-
-
+      {/* <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" /> */}
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=optional" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=optional" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=optional" rel="stylesheet" />
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
 
 
