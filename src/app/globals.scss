@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ATM-Avo;
+  src: url(../assets/fonts/Arimo-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: ATM-AvoBold;
+  src: url(../assets/fonts/Arimo-Bold.ttf);
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: #181D24;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+html {
+  font-size: x-small;
+}
+
+body {
+  font-family: ATM-Avo;
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-start-rgb);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.collapse {
+  visibility: visible !important;
+}
+
+.text-lineWhite {
+  color: #f9f0ec;
+}
+
+.text-orange {
+  color: #ca9d75;
+}
+
+header {
+  &.bg-banner {
+    background: url(../assets/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+
+    .text-banner {
+      font-family: DM Serif Display, Helvetica, Arial, sans-serif;
+      font-weight: 300;
+    }
+  }
+}
+
+.menu-header {
+  border: 1px solid #ca9d75;
+  border-radius: 20px;
+  padding: 3px 15px;
+}
+
+.dropdown-header {
+  background: #ca9d75;
+  padding: 3px 15px;
+  border-radius: 20px;
+}
+
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -10px;
+  color: #c49b63 !important;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  // opacity: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev span:before,
+.owl-carousel .owl-nav .owl-next span:before {
+  font-size: 60px;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  left: 6%;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  right: 6%;
+}
+
+.owl-carousel:hover .owl-nav .owl-prev,
+.owl-carousel:hover .owl-nav .owl-next {
+  opacity: 1;
+}
+
+.owl-carousel:hover .owl-nav .owl-prev {
+  left: 0;
+}
+
+.owl-carousel:hover .owl-nav .owl-next {
+  right: 0;
+}
+
+.home_slider1,
+.home_slider3 {
+  .slider-item {
+    background-position: center !important;
+    background-size: cover !important;
+  }
+}
+
+.btn-view-more {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #ca9d75;
+  background: var(--background-start-rgb)
+}
+
+.btn-come-width {
+  color: #f9f0ec;
+  border: 1px solid #ca9d75;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background: var(--background-start-rgb)
+}
+
+.text-intro {
+  background: url(../assets/images/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-2 {
+  background: url(../assets/images/banner4.png);
+  background-size: contain;
+
+  background-repeat: no-repeat;
+  // background-position: center;
+}
+
+.intro-3 {
+  background: url(../assets/images/banner5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.form-contact {
+
+  input,
+  textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ca9d75;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
