@@ -16,7 +16,7 @@ import '@/assets/css/flaticon.css'
 import Link from "next/link";
 import icon from '@/assets/images/dessert-2.jpg'
 import person from '@/assets/images/person_5.jpg'
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; 
 
 
 
@@ -45,11 +45,13 @@ export default function Home() {
 
       {/* <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" /> */}
-      <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=optional" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=optional" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=optional" rel="stylesheet" />
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
 
+      {/* <Head> */}
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=optional" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=optional" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=optional" rel="stylesheet" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+      {/* </Head> */}
 
       <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
       <Script src="/js/jquery-migrate-3.0.1.min.js" strategy="beforeInteractive" />
@@ -430,7 +432,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-5 items-center text-[1.2rem]">
                     <i className="fa fa-check-circle text-orange text-[2.25rem]"></i>
-                    <p className="uppercase text-[#877C79]">I agree with the developer's policy</p>
+                    <p className="uppercase text-[#877C79]">I agree with the developer is policy</p>
                   </div>
                   <div className="text-center w-100">
                     <button className="submit w-[80px] h-[80px] bg-[#AC835E] rounded-full text-[2.5rem] mt-16 text-lineWhite">
