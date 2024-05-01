@@ -53,8 +53,8 @@ export default function Home() {
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
       {/* </Head> */}
 
-      <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
-      <Script src="/js/jquery-migrate-3.0.1.min.js" strategy="beforeInteractive" />
+      <Script src="/js/jquery.min.js" strategy="lazyOnload" />
+      <Script src="/js/jquery-migrate-3.0.1.min.js" strategy="lazyOnload" />
       {/* <Script src="/js/popper.min.js" strategy="lazyOnload" /> */}
       {/* <Script src="/js/bootstrap.min.js" strategy="lazyOnload" /> */}
       <Script src="/js/jquery.easing.1.3.js" strategy="lazyOnload" />
