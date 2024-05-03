@@ -16,7 +16,8 @@ import '@/assets/css/flaticon.css'
 import Link from "next/link";
 import icon from '@/assets/images/dessert-2.jpg'
 import person from '@/assets/images/person_5.jpg'
-import { useEffect, useState } from "react"; 
+import logo from '@/assets/images/logo.png'
+import { useEffect, useState } from "react";
 
 
 
@@ -47,10 +48,10 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet" /> */}
 
       {/* <Head> */}
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=optional" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=optional" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=optional" rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=optional" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=optional" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=optional" rel="stylesheet" />
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
       {/* </Head> */}
 
       <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
@@ -81,8 +82,8 @@ export default function Home() {
                 <Link className="text-lineWhite text-[1.2rem]" href={'/'}>Contact</Link>
               </div>
 
-              <div>
-                <Image alt="" width={200} height={200} src={'/next.svg'} />
+              <div className="h-[70px] w-[140px]">
+                <Image alt="" className="w-full h-full" src={logo} />
               </div>
               <div className="flex gap-10 items-center">
                 <div className="text-lineWhite text-[1.2rem]">0909210398</div>
@@ -97,26 +98,29 @@ export default function Home() {
         </div>
 
         <header className="h-lvh bg-banner flex flex-col justify-between">
-          <div className="container mx-auto pb-10 pt-20">
-            <nav className="flex justify-between items-center">
-              <div className="flex gap-10 items-center">
-                <button className="menu-header text-lineWhite text-[1.2rem]"><i className="fa fa-bars mr-2"></i>Menu</button>
-                <Link className="text-lineWhite text-[1.2rem]" href={'/'}>Contact</Link>
-              </div>
-
-              <div>
-                <Image alt="" width={200} height={200} src={'/next.svg'} />
-              </div>
-              <div className="flex gap-10 items-center">
-                <div className="text-lineWhite text-[1.2rem]">0909210398</div>
-                <div className="text-lineWhite dropdown-header text-[1.2rem]">Dropdown <i className="fa fa-angle-down ml-2"></i></div>
-                <div>
-                  <i className="fa fa-heart text-lineWhite"></i>
+          <div className="pb-10 pt-14 border-b-[1px] border-[#ffffff1a]">
+            <div className="container mx-auto ">
+              <nav className="flex justify-between items-center">
+                <div className="flex gap-10 items-center">
+                  <button className="menu-header text-lineWhite text-[1.2rem]"><i className="fa fa-bars mr-2"></i>Menu</button>
+                  <Link className="text-lineWhite text-[1.2rem]" href={'/'}>Contact</Link>
                 </div>
-              </div>
 
-            </nav>
+                <div className="h-[70px] w-[140px]">
+                  <Image alt="" className="w-full h-full" src={logo} />
+                </div>
+
+                <div className="flex gap-10 items-center">
+                  <div className="text-lineWhite text-[1.2rem]">0909210398</div>
+                  <div className="text-lineWhite dropdown-header text-[1.2rem]">Dropdown <i className="fa fa-angle-down ml-2"></i></div>
+                  <div>
+                    <i className="fa fa-heart text-lineWhite"></i>
+                  </div>
+                </div>
+              </nav>
+            </div>
           </div>
+          
           <div className="container mx-auto relative">
             <div className=" absolute -bottom-[90px]  text-banner text-[16rem] leading-[16rem]">
               <span className="text-lineWhite">VICTORY</span> <br />
@@ -468,7 +472,7 @@ export default function Home() {
               </div>
             </div>
             <div className="py-[10rem] flex flex-col justify-center items-center">
-              <Image alt="" width={200} height={200} src={'/next.svg'} />
+              <Image alt="" width={200} height={200} src={logo} />
               <div className="mt-7 font-extralight text-orange text-[8rem] font-DM">0909210398</div>
               <div className="text-[#71677a] uppercase mt-5">Lorem, ipsum dolor.</div>
               <div className="text-[#71677a] uppercase">Lorem, ipsum dolor test.</div>
